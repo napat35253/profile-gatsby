@@ -1,6 +1,7 @@
 const config = require('./src/config');
 
 module.exports = {
+  pathPrefix: "/profile-gatsby",
   siteMetadata: {
     title: 'Napat Bhahol',
     description:
