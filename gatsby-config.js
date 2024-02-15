@@ -5,7 +5,7 @@ module.exports = {
     title: 'Napat Bhahol',
     description:
       'Napat Bhaholpolbhayuhasena is a software engineer who specializes in developing any kind of software currently focusing on deep leraning',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+    siteUrl: 'https://napat35253.github.io/profile-gatsby/', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bchiang7',
   },
