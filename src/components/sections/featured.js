@@ -300,8 +300,8 @@ const StyledProject = styled.li`
 
       @media (max-width: 788px) {
         object-fit: cover;
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
         filter: grayscale(100%) contrast(1) brightness(50%);
       }
     }
