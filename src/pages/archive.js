@@ -12,7 +12,7 @@ import { usePrefersReducedMotion } from '@hooks';
 const StyledTableContainer = styled.div`
   margin: 100px -20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 788px) {
     margin: 50px -10px;
   }
 
@@ -21,7 +21,7 @@ const StyledTableContainer = styled.div`
     border-collapse: collapse;
 
     .hide-on-mobile {
-      @media (max-width: 768px) {
+      @media (max-width: 788px) {
         display: none;
       }
     }
@@ -41,14 +41,14 @@ const StyledTableContainer = styled.div`
       &:first-child {
         padding-left: 20px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 788px) {
           padding-left: 10px;
         }
       }
       &:last-child {
         padding-right: 20px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 788px) {
           padding-right: 10px;
         }
       }
@@ -76,7 +76,7 @@ const StyledTableContainer = styled.div`
       &.year {
         padding-right: 20px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 788px) {
           padding-right: 10px;
           font-size: var(--fz-sm);
         }
@@ -170,16 +170,8 @@ const ArchivePage = ({ location, data }) => {
             <tbody>
               {projects.length > 0 &&
                 projects.map(({ node }, i) => {
-                  const {
-                    date,
-                    github,
-                    external,
-                    ios,
-                    android,
-                    title,
-                    tech,
-                    company,
-                  } = node.frontmatter;
+                  const { date, github, external, ios, android, title, tech, company } =
+                    node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>

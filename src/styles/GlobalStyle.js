@@ -121,7 +121,7 @@ const GlobalStyle = createGlobalStyle`
     @media (max-width: 1080px) {
       padding: 200px 100px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 788px) {
       padding: 150px 50px;
     }
     @media (max-width: 480px) {
@@ -134,7 +134,7 @@ const GlobalStyle = createGlobalStyle`
       @media (max-width: 1080px) {
         padding: 0 100px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 788px) {
         padding: 0 50px;
       }
       @media (max-width: 480px) {
@@ -148,7 +148,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 100px 0;
     max-width: 1000px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 788px) {
       padding: 80px 0;
     }
 
@@ -218,7 +218,7 @@ const GlobalStyle = createGlobalStyle`
       @media (max-width: 1080px) {
         width: 200px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 788px) {
         width: 100%;
       }
       @media (max-width: 600px) {
@@ -406,7 +406,7 @@ const GlobalStyle = createGlobalStyle`
     @media (max-width: 1080px) {
       font-size: var(--fz-sm);
     }
-    @media (max-width: 768px) {
+    @media (max-width: 788px) {
       font-size: var(--fz-xs);
     }
 

@@ -16,7 +16,7 @@ const StyledFooter = styled.footer`
 const StyledSocialLinks = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 788px) {
     display: block;
     width: 100%;
     max-width: 270px;
@@ -106,7 +106,10 @@ const Footer = () => {
 
       <StyledCredit tabindex="-1">
         <a href="https://github.com/bchiang7/v4">
-          <div>Thanks for this beautiful website template which was designed &amp; built by Brittany Chiang</div>
+          <div>
+            Thanks for this beautiful website template which was designed &amp; built by Brittany
+            Chiang
+          </div>
 
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">

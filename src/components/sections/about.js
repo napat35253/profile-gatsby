@@ -13,7 +13,7 @@ const StyledAboutSection = styled.section`
     grid-template-columns: 3fr 2fr;
     grid-gap: 50px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 788px) {
       display: block;
     }
   }
@@ -50,7 +50,7 @@ const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 788px) {
     margin: 50px auto 0;
     width: 70%;
   }

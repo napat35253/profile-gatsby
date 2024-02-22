@@ -29,6 +29,10 @@ const StyledHeroSection = styled.section`
     }
   }
 
+  h2 {
+    max-width: 90vh;
+  }
+
   h3 {
     margin-top: 5px;
     color: var(--slate);

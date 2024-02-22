@@ -81,7 +81,7 @@ const StyledTabButton = styled.button`
   text-align: left;
   white-space: nowrap;
 
-  @media (max-width: 768px) {
+  @media (max-width: 788px) {
     padding: 0 15px 2px;
   }
   @media (max-width: 600px) {
