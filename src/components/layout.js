@@ -11,9 +11,9 @@ const StyledContent = styled.div`
 `;
 
 const Layout = ({ children, location }) => {
-  const isHome = location.pathname === '/' || location.pathname.match(/^\/?index\.html$/);
-  const [isLoading, setIsLoading] = useState(isHome);
-
+    const isHome = location ? location.pathname === '/' : false;
+    const [isLoading, setIsLoading] = useState(isHome);
+    
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
     const allLinks = Array.from(document.querySelectorAll('a'));
@@ -28,7 +28,8 @@ const Layout = ({ children, location }) => {
   };
 
   useEffect(() => {
-    console.log(`isLoading: ${isLoading}, isHome: ${isHome}`);
+    console.log('Location prop:', location);
+    console.log(`pathname: ${location?.pathname}, isHome: ${isHome}, isLoading: ${isLoading}`);  
     if (isLoading) {
       return;
     }
@@ -45,7 +46,7 @@ const Layout = ({ children, location }) => {
     }
 
     handleExternalLinks();
-  }, [isLoading]);
+  }, [location, isHome, isLoading]);
 
   return (
     <>
