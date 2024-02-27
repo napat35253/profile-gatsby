@@ -11,7 +11,9 @@ const StyledContent = styled.div`
 `;
 
 const Layout = ({ children, location }) => {
-    const isHome = location ? location.pathname === '/' : false;
+    const basePath = '/profile-gatsby';
+    const normalizedPathname = location.pathname.replace(new RegExp(`^${basePath}`), '');
+    const isHome = normalizedPathname === '/' || normalizedPathname === '';
     const [isLoading, setIsLoading] = useState(isHome);
     
   // Sets target="_blank" rel="noopener noreferrer" on external links
