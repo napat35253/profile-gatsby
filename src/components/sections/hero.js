@@ -69,7 +69,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software engineer currently focusing on autonomous technology and deep learning. At present, I’m working on applying Graph Neural Network in ego trajectory prediction
+        I’m a software engineer focusing on autonomous technology and deep learning. Currently, working on applying Graph Neural Network in ego trajectory prediction
         at{' '}
         <a href="https://zenseact.com/" target="_blank" rel="noreferrer">
             Zenseact
