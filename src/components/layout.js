@@ -28,6 +28,7 @@ const Layout = ({ children, location }) => {
   };
 
   useEffect(() => {
+    console.log(`isLoading: ${isLoading}, isHome: ${isHome}`);
     if (isLoading) {
       return;
     }
