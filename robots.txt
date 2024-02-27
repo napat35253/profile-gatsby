@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://napat35253.github.io/profile-gatsby/sitemap-index.xml
+Host: https://napat35253.github.io
